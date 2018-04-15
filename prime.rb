@@ -9,9 +9,10 @@ def prime?(n)
     end
     i = 5
     while i * i <= n do
-        if n mod i = 0 or n mod (i + 2) = 0
+        if n % i == 0 || n % (i + 2) == 0
             return false
-        i ← i + 6
+        end
+        i = i + 6
     end
     return true
 end
